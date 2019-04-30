@@ -1,0 +1,498 @@
+.container {
+  width: 692px;
+  height: 640px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  // margin: 100px 0px 0px 100px;
+  // background-color: bisque;
+}
+.content {
+  width: 660px;
+  height: 640px;
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.close_btn {
+  width: 16px;
+  height: 16px;
+  margin-left: 16px;
+}
+.content_head_img {
+  width: 660px;
+  height: 68px;
+}
+
+.pay_contents {
+  width: 620px;
+  height: 130.3px;
+  // margin: 0px 20px 20px 20px;
+  display: flex;
+  flex-direction: row;
+  .pay_content {
+    width: 179px;
+    height: 110.3px;
+    display: flex;
+    flex-direction: column;
+    .pay_content_tag {
+      width: 60px;
+      height: 22px;
+      background: #fc491d;
+      border-radius: 10px 15px 15px 0px;
+      align-self: flex-end;
+      position: relative;
+      top: 10.3px;
+    }
+    .pay_content_detail {
+      width: 150px;
+      height: 90px;
+      display: flex;
+      background: #ffffff;
+      border: 2px solid #eeb86e;
+      border-radius: 6px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .pay_content_detail_title {
+        width: 71px;
+        height: 14px;
+        font-family: NotoSansHans-Regular;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.6);
+      }
+      .pay_content_detail_price {
+        width: 74px;
+        height: 40px;
+        margin-top: 8px;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        .pay_content_detail_price_icon {
+          width: 10px;
+          height: 40px;
+          font-family: PingFangSC-Semibold;
+          font-size: 16px;
+          color: #88632f;
+        }
+        .pay_content_detail_price_num {
+          width: 62px;
+          height: 40px;
+          font-family: PingFangSC-Semibold;
+          font-size: 28px;
+          color: #88632f;
+          margin-left: 2px;
+        }
+      }
+    }
+  }
+}
+
+.pay_way {
+  width: 620px;
+  //   height: 270px;
+  padding: 0px 0px 0px 0px;
+  background: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  .pay_way_btns {
+    width: 620px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    .pay_way_btn {
+      width: 160px;
+      height: 48px;
+      padding: 13px 42px 13px 42px;
+      background: #f3f4f9;
+      border: 1px solid #e6e6e6;
+      font-family: PingFangSC-Regular;
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.6);
+    }
+    .pay_way_btn_chosed {
+      width: 160px;
+      height: 48px;
+      padding: 13px 42px 13px 42px;
+      background: #ffffff;
+      border-bottom: none;
+    }
+  }
+  .quick_pay_detail {
+    width: 620px;
+    height: 222px;
+
+    border: 1px solid #e6e6e6;
+    border-top: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .quick_pay_detail_QR_code {
+      width: 120px;
+      height: 121px;
+      background-color: black;
+      color: white;
+    }
+    .quick_pay_detail_info {
+      width: 132px;
+      height: 100px;
+      margin-left: 36px;
+      .quick_pay_detail_info_price {
+        width: 116x;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        .quick_pay_detail_info_price_icon {
+          width: 10px;
+          height: 40px;
+        }
+        .quick_pay_detail_info_price_num {
+          width: 104px;
+          height: 40px;
+          margin-left: 2px;
+        }
+      }
+      .quick_pay_detail_info_des {
+        width: 135px;
+        height: 14px;
+      }
+      .quick_pay_detail_info_imgs {
+        display: flex;
+        flex-direction: row;
+        width: 64px;
+        height: 24px;
+        .quick_pay_detail_info_img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+  .balance_pay_detail {
+    width: 620px;
+    height: 222px;
+    border: 1px solid #e6e6e6;
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    .balance_pay_detail_info {
+      width: 395px;
+      height: 40px;
+      margin-top: 47px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: baseline;
+      .balance_pay_detail_info_txt {
+        width: 80px;
+        height: 22px;
+        font-family: PingFangSC-Regular;
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.6);
+        line-height: 22px;
+      }
+
+      .balance_pay_detail_info_price_icon {
+        width: 10px;
+        height: 40px;
+        font-family: PingFangSC-Semibold;
+        font-size: 16px;
+        color: #de3033;
+      }
+      .balance_pay_detail_info_price_num {
+        width: 104px;
+        height: 40px;
+        margin-left: 2px;
+        font-family: PingFangSC-Semibold;
+        font-size: 28px;
+        color: #de3033;
+      }
+    }
+    .balance_pay_btn {
+      width: 120px;
+      height: 40px;
+      margin-top: 50px;
+      background: #eeb86e;
+      border-radius: 4px;
+      font-family: PingFangSC-Medium;
+      font-size: 18px;
+      color: #ffffff;
+      letter-spacing: 0;
+      line-height: 40px;
+      padding-left: 24px;
+    }
+  }
+  .company_pay_detail {
+    width: 620px;
+    height: 222px;
+
+    border: 1px solid #e6e6e6;
+    border-top: none;
+    padding-left: 20px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .company_pay_detail_info1 {
+      width: 620px;
+      height: 14px;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      font-family: NotoSansHans-Regular;
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.8);
+      .company_pay_detail_info1_1 {
+        width: 70px;
+        height: 14px;
+      }
+      .company_pay_detail_info1_2 {
+        width: 224px;
+        height: 14px;
+        margin-left: 60px;
+      }
+    }
+    .company_pay_detail_info2 {
+      width: 149px;
+      height: 24px;
+
+      margin-top: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: baseline;
+      .company_pay_detail_info2_1 {
+        width: 42px;
+        height: 24px;
+        font-family: NotoSansHans-Regular;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.8);
+        line-height: 21px;
+      }
+      .company_pay_detail_info2_2 {
+        width: 93px;
+        height: 24px;
+
+        font-family: NotoSansHans-Bold;
+        font-size: 24px;
+        color: #de3033;
+        line-height: 21px;
+      }
+      .company_pay_detail_info2_3 {
+        width: 14px;
+        height: 24px;
+        font-family: NotoSansHans-Regular;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.8);
+        line-height: 21px;
+      }
+    }
+
+    .company_pay_detail_info3 {
+      width: 370px;
+      height: 32px;
+      margin-top: 23px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+
+      align-items: baseline;
+      .company_pay_detail_info_btn {
+        width: 148px;
+        height: 32px;
+        padding-left: 18px;
+        background: #eeb86e;
+        border-radius: 4px;
+        line-height: 32px;
+        font-family: NotoSansHans-Medium;
+        font-size: 14px;
+        color: #ffffff;
+        letter-spacing: 0;
+      }
+      .company_pay_detail_info_btn_des {
+        width: 210px;
+        height: 12px;
+        font-family: NotoSansHans-Regular;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.4);
+        margin-left: 12px;
+      }
+    }
+    .company_pay_detail_info4 {
+      width: 570px;
+      height: 14px;
+      margin-top: 20px;
+      font-family: NotoSansHans-Regular;
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.4);
+      line-height: 12px;
+    }
+  }
+}
+.pay_power {
+  width: 620px;
+  height: 110px;
+
+  .pay_power_title {
+    width: 80px;
+    height: 22px;
+    margin-top: 20px;
+    font-family: PingFangSC-Semibold;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .pay_power_area {
+    width: 620px;
+    height: 68px;
+    display: flex;
+    padding-top: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .pay_power_item {
+      width: 75px;
+      height: 58px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .pay_power_item_img {
+        width: 32px;
+        height: 32px;
+        opacity: 0.24;
+        background: #eeb86e;
+      }
+      .pay_power_item_txt {
+        width: 75px;
+        height: 20x;
+        margin-top: 6px;
+      }
+    }
+  }
+}
+.vip_agreement {
+  width: 60px;
+  height: 20px;
+  margin: 20px 0px 23px 0px;
+  opacity: 0.6;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #000000;
+  text-decoration: underline;
+}
+
+.business_empower {
+  width: 510px;
+  height: 592px;
+  background: #ffffff;
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 3px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  .business_title {
+    width: 144px;
+    height: 21px;
+    margin-top: 40px;
+    font-family: PingFangSC-Medium;
+    font-size: 24px;
+    color: #626262;
+    text-align: center;
+    line-height: 21px;
+  }
+  .business_des {
+    width: 320px;
+    height: 12px;
+    opacity: 0.4;
+    font-family: PingFangTC-Regular;
+    font-size: 11px;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: 12px;
+
+    margin-top: 12px;
+  }
+  .form_area {
+    width: 348px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    .form_item {
+      width: 348px;
+      height: 42px;
+      margin-top: 28px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
+      .form_item_icon {
+        width: 8px;
+        height: 20px;
+        font-family: PingFangSC-Medium;
+        font-size: 14px;
+        color: #d0021b;
+      }
+      .form_item_input {
+        width: 336px;
+        height: 42px;
+        margin-left: 4px;
+        background: #f7f8f9;
+        border: 1px solid #dddddd;
+        border-radius: 4px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .form_item_btn_download {
+        width: 336px;
+        height: 42px;
+        background: #eeb86e;
+        border-radius: 4px;
+        font-family: PingFangTC-Regular;
+        font-size: 16px;
+        color: #ffffff;
+        letter-spacing: 0;
+        padding: 10px 112px 10px 112px;
+      }
+    }
+  }
+
+  .form_item_btn_close {
+    opacity: 0.8;
+    font-family: PingFangTC-Regular;
+    font-size: 12px;
+    color: #000000;
+    letter-spacing: 0;
+    margin-top: 12px;
+    text-decoration: underline;
+  }
+}
+.selec_txt {
+  opacity: 0.6;
+  font-family: PingFangTC-Regular;
+  font-size: 14px;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 14px;
+}
