@@ -16,106 +16,96 @@
       </div>
       <div class="head_2">
         <div class="head_2_btn" style="margin-left:360px;">
-          <!-- <img class="head_2_btn_img" src alt="图标"> -->
-          <div class="head_2_btn_img"></div>
+          <div class="head_2_btn_img" style="background-position: -40px -40px;"></div>
           <div class="head_2_btn_des_1" style="width:92px;">10万模板</div>
           <div class="head_2_btn_des_2">全部解锁</div>
         </div>
 
         <div class="head_2_btn">
-          <div class="head_2_btn_img"></div>
+          <div class="head_2_btn_img" style="background-position: -150px -40px;"></div>
           <div class="head_2_btn_des_1" style="width:118px;">1000款字体</div>
           <div class="head_2_btn_des_2">企业专属</div>
         </div>
 
         <div class="head_2_btn">
-          <div class="head_2_btn_img"></div>
+          <div class="head_2_btn_img" style="background-position: -260px -40px;"></div>
           <div class="head_2_btn_des_1" style="width:94px;">40万图片</div>
           <div class="head_2_btn_des_2" style="width:105px;">可免费商业</div>
         </div>
 
         <div class="head_2_btn">
-          <div class="head_2_btn_img"></div>
+          <div class="head_2_btn_img" style="background-position: -40px -130px;"></div>
           <div class="head_2_btn_des_1" style="width:110px;">商业授权书</div>
           <div class="head_2_btn_des_2">法律保障</div>
         </div>
 
         <div class="head_2_btn">
-          <div class="head_2_btn_img"></div>
+          <div class="head_2_btn_img" style="background-position: -150px -130px;"></div>
           <div class="head_2_btn_des_1" style="width:80px;">印刷9折</div>
           <div class="head_2_btn_des_2">品质保证</div>
         </div>
 
         <div class="head_2_btn">
-          <div class="head_2_btn_img"></div>
+          <div class="head_2_btn_img" style="background-position: -260px -130px;"></div>
           <div class="head_2_btn_des_1" style="width:39px;">16G</div>
           <div class="head_2_btn_des_2" style="width:108px;">上传空间扩容</div>
         </div>
 
         <div class="head_2_btn" style="margin-right:370px;">
-          <div class="head_2_btn_img"></div>
+          <div class="head_2_btn_img" style="background-position: -370px -130px;"></div>
           <div class="head_2_btn_des_1" style="width:88px;">企业管理</div>
           <div class="head_2_btn_des_2">高效安全</div>
         </div>
       </div>
 
       <div class="head_3">
-        <div class="head_3_1_area">
-          <div class="head_3_1">
-            <div class="head_3_1_top">加送1年</div>
-            <div class="head_3_1_mid">企业版权VIP/1人</div>
-            <div class="head_3_1_price">
-              <div class="head_3_1_price_icon">￥</div>
-              <div class="head_3_1_price_num">1200</div>
-              <div class="head_3_1_price_unit">元/年</div>
-            </div>
-            <div class="head_3_1_btn">
-              立即开通
-              <!-- <div class="head_3_1_btn_txt">立即开通</div> -->
-            </div>
+        <!-- 小块 -->
+        <div class="head_3_1">
+          <div class="head_3_1_top">加送1年</div>
+          <div class="head_3_1_mid">企业版权VIP/1人</div>
+          <div class="head_3_1_price">
+            <div class="head_3_1_price_icon">￥</div>
+            <div class="head_3_1_price_num">1200</div>
+            <div class="head_3_1_price_unit">元/年</div>
           </div>
+          <div class="head_3_1_btn">立即开通</div>
         </div>
-        <div class="head_3_1_area">
-          <div class="head_3_1">
-            <div class="head_3_1_top">加送1年</div>
-            <div class="head_3_1_tag">超值特惠</div>
-            <div class="head_3_1_mid head_3_1_mid_top_margin">企业版权VIP/5人</div>
-            <div class="head_3_1_price">
-              <div class="head_3_1_price_icon">￥</div>
-              <div class="head_3_1_price_num">1600</div>
-              <div class="head_3_1_price_unit">元/年</div>
-            </div>
-            <div class="head_3_1_btn">
-              立即开通
-              <!-- <div class="head_3_1_btn_txt">立即开通</div> -->
-            </div>
+
+        <!-- 小块 -->
+        <div class="head_3_1" style="  position: relative;  left: 450px;">
+          <div class="head_3_1_top">加送1年</div>
+          <div class="head_3_1_mid">企业版权VIP/10人</div>
+          <div class="head_3_1_price">
+            <div class="head_3_1_price_icon">￥</div>
+            <div class="head_3_1_price_num">2400</div>
+            <div class="head_3_1_price_unit">元/年</div>
           </div>
+          <div class="head_3_1_btn">立即开通</div>
         </div>
-        <!-- <div class="head_3_2">
-          <div class="head_3_2_top">加送1年</div>
-          <div class="head_3_2_mid">企业版权VIP/5人</div>
-          <div class="head_3_2_price">
-            <div class="head_3_2_price_icon">￥</div>
-            <div class="head_3_2_price_num">1600</div>
-            <div class="head_3_2_price_unit">元/年</div>
+
+        <!-- 大块-->
+        <!-- <div class="head_3_1">
+          <div class="head_3_1_top">加送1年</div>
+          <div class="head_3_1_tag">超值特惠</div>
+          <div class="head_3_1_mid head_3_1_mid_top_margin">企业版权VIP/5人</div>
+          <div class="head_3_1_price">
+            <div class="head_3_1_price_icon">￥</div>
+            <div class="head_3_1_price_num">1600</div>
+            <div class="head_3_1_price_unit">元/年</div>
           </div>
-          <div class="head_3_2_btn">
-            <div class="head_3_2_btn_txt">立即开通</div>
-          </div>
+          <div class="head_3_1_btn">立即开通</div>
         </div>-->
-        <div class="head_3_1_area">
-          <div class="head_3_1">
-            <div class="head_3_1_top">加送1年</div>
-            <div class="head_3_1_mid">企业版权VIP/10人</div>
-            <div class="head_3_1_price">
-              <div class="head_3_1_price_icon">￥</div>
-              <div class="head_3_1_price_num">2400</div>
-              <div class="head_3_1_price_unit">元/年</div>
+        <div class="head_3_2_area">
+          <div class="head_3_2">
+            <div class="head_3_2_top">加送1年</div>
+            <div class="head_3_2_tag">超值特惠</div>
+            <div class="head_3_2_mid">企业版权VIP/5人</div>
+            <div class="head_3_2_price">
+              <div class="head_3_2_price_icon">￥</div>
+              <div class="head_3_2_price_num">1600</div>
+              <div class="head_3_2_price_unit">元/年</div>
             </div>
-            <div class="head_3_1_btn">
-              立即开通
-              <!-- <div class="head_3_1_btn_txt">立即开通</div> -->
-            </div>
+            <div class="head_3_2_btn">立即开通</div>
           </div>
         </div>
       </div>
@@ -123,6 +113,9 @@
       <div class="head_4_border">
         <div class="head_4">
           <div class="head_4_1s">
+            <div class="head_4_1_icon" style="background-position: -37px -313px;">
+              <div class="head_4_1_icon_txt">其他套餐</div>
+            </div>
             <div class="head_4_1">
               <div class="head_4_1_top">加送2年</div>
               <div class="head_4_1_mid">企业版权VIP/1人</div>
@@ -131,10 +124,7 @@
                 <div class="head_4_1_price_num">1920</div>
                 <div class="head_4_1_price_unit">元/2年</div>
               </div>
-              <div class="head_4_1_btn">
-                立即开通
-                <!-- <div class="head_4_1_btn_txt">立即开通</div> -->
-              </div>
+              <div class="head_4_1_btn">立即开通</div>
             </div>
             <div class="head_4_1">
               <div class="head_4_1_top">加送2年</div>
@@ -144,10 +134,7 @@
                 <div class="head_4_1_price_num">2560</div>
                 <div class="head_4_1_price_unit">元/2年</div>
               </div>
-              <div class="head_4_1_btn">
-                立即开通
-                <!-- <div class="head_4_1_btn_txt">立即开通</div> -->
-              </div>
+              <div class="head_4_1_btn">立即开通</div>
             </div>
             <div class="head_4_1">
               <div class="head_4_1_top">加送2年</div>
@@ -157,12 +144,10 @@
                 <div class="head_4_1_price_num">4200</div>
                 <div class="head_4_1_price_unit">元/2年</div>
               </div>
-              <div class="head_4_1_btn">
-                立即开通
-                <!-- <div class="head_4_1_btn_txt">立即开通</div> -->
-              </div>
+              <div class="head_4_1_btn">立即开通</div>
             </div>
           </div>
+
           <div class="head_4_2s">
             <div class="head_4_1">
               <div class="head_4_1_top">加送1年</div>
@@ -172,10 +157,7 @@
                 <div class="head_4_1_price_num">4500</div>
                 <div class="head_4_1_price_unit">元/年</div>
               </div>
-              <div class="head_4_1_btn">
-                立即开通
-                <!-- <div class="head_4_1_btn_txt">立即开通</div> -->
-              </div>
+              <div class="head_4_1_btn">立即开通</div>
             </div>
             <div class="head_4_1">
               <div class="head_4_1_top">加送1年</div>
@@ -185,10 +167,7 @@
                 <div class="head_4_1_price_num">6000</div>
                 <div class="head_4_1_price_unit">元/年</div>
               </div>
-              <div class="head_4_1_btn">
-                立即开通
-                <!-- <div class="head_4_1_btn_txt">立即开通</div> -->
-              </div>
+              <div class="head_4_1_btn">立即开通</div>
             </div>
             <div class="head_4_1">
               <div class="head_4_1_top">加送2年</div>
@@ -198,10 +177,7 @@
                 <div class="head_4_1_price_num">8000</div>
                 <div class="head_4_1_price_unit">元/2年</div>
               </div>
-              <div class="head_4_1_btn">
-                立即开通
-                <!-- <div class="head_4_1_btn_txt">立即开通</div> -->
-              </div>
+              <div class="head_4_1_btn">立即开通</div>
             </div>
             <div class="head_4_1">
               <div class="head_4_1_top">加送2年</div>
@@ -211,17 +187,14 @@
                 <div class="head_4_1_price_num" style="width:107px;">10000</div>
                 <div class="head_4_1_price_unit">元/年</div>
               </div>
-              <div class="head_4_1_btn">
-                立即开通
-                <!-- <div class="head_4_1_btn_txt">立即开通</div> -->
-              </div>
+              <div class="head_4_1_btn">立即开通</div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- ——-----------middle------middle-------middle-----------middle------middle ----------middle--------     -->
+    <!-- ——-----------middle------middle-------middle-----------middle------middle ----------middle--------  -->
     <div class="middle">
       <img class="middle_title_img" src="./img/vip_quanyi.png" alt>
       <div class="middle_1" style="height: 552px;">
@@ -231,10 +204,7 @@
             <div class="middle_1_left_title_2">免费</div>
           </div>
           <div class="middle_1_left_des">满足所有营销、新媒体场景需求</div>
-          <div class="middle_1_left_btn">
-            开通立享
-            <!-- <div class="middle_1_left_btn_txt">开通立享</div> -->
-          </div>
+          <div class="middle_1_left_btn">开通立享</div>
         </div>
 
         <video
@@ -261,7 +231,7 @@
         </div>
 
         <div class="middle_2_right" style=" width: 339px;margin-left: 181px;">
-          <div class="middle_2_right_title" style=" width: 339px;" >
+          <div class="middle_2_right_title" style=" width: 339px;">
             <div class="middle_2_right_title_2" style=" width: 107px; margin-left: 0px;">300款</div>
             <div class="middle_2_right_title_1" style=" width: 228px;margin-left:4px;">专属商用字体</div>
           </div>
@@ -383,7 +353,7 @@
         </div>
       </div>
     </div>
-
+    <!----------bottom--------bottom---------bottom----------bottom-----------bottom----------bottom  -->
     <div class="bottom">
       <div class="bottom_ques">
         <img class="bottom_ques_title_img" src="./img/common_problem.png" alt>
@@ -439,12 +409,7 @@
         </div>
       </div>
     </div>
-
-    <!-- <div>
-        <span class="ico ico-sound" :class="{ active: isMute }" v-on:click="closeSoundClick()"></span>
-      <span class="ico ico-skip"></span>
-      <span class="ico ico-video" :class="{ hide: isPlay }" v-on:click="playClick()"></span>
-    </div>-->
+    <img class="bottom_xuanfu" src="./img/bottom_xuanfu.png" alt="底部悬浮框">
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 .container {
   width: 692px;
-  height: 640px;
+  height: 645px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -10,7 +10,7 @@
 }
 .content {
   width: 660px;
-  height: 640px;
+  height: 645px;
   background: #f9f9f9;
   display: flex;
   flex-direction: column;
@@ -35,7 +35,7 @@
   flex-direction: row;
   .pay_content {
     width: 179px;
-    height: 110.3px;
+    height: 112.3px;
     display: flex;
     flex-direction: column;
     .pay_content_tag {
@@ -52,11 +52,12 @@
       height: 90px;
       display: flex;
       background: #ffffff;
-      border: 2px solid #eeb86e;
-      border-radius: 6px;
+      // border: 2px solid #eeb86e;
+      // border-radius: 6px;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      background-image: url("./img/icon.svg");
       .pay_content_detail_title {
         width: 71px;
         height: 14px;
@@ -115,6 +116,7 @@
       font-family: PingFangSC-Regular;
       font-size: 16px;
       color: rgba(0, 0, 0, 0.6);
+      cursor: pointer;
     }
     .pay_way_btn_chosed {
       width: 160px;
@@ -164,13 +166,16 @@
         height: 14px;
       }
       .quick_pay_detail_info_imgs {
-        display: flex;
-        flex-direction: row;
         width: 64px;
         height: 24px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 14px;
         .quick_pay_detail_info_img {
           width: 24px;
           height: 24px;
+          background-image: url("img/icon.svg");
+          cursor: pointer;
         }
       }
     }
@@ -230,6 +235,7 @@
       letter-spacing: 0;
       line-height: 40px;
       padding-left: 24px;
+      cursor: pointer;
     }
   }
   .company_pay_detail {
@@ -321,6 +327,7 @@
         font-size: 14px;
         color: #ffffff;
         letter-spacing: 0;
+        cursor: pointer;
       }
       .company_pay_detail_info_btn_des {
         width: 210px;
@@ -375,6 +382,8 @@
         height: 32px;
         opacity: 0.24;
         background: #eeb86e;
+        background-image: url("./img/icon.svg");
+        border-radius: 50px;
       }
       .pay_power_item_txt {
         width: 75px;
@@ -393,6 +402,7 @@
   font-size: 14px;
   color: #000000;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .business_empower {
@@ -425,7 +435,7 @@
     color: #000000;
     letter-spacing: 0;
     line-height: 12px;
-
+    text-align: center;
     margin-top: 12px;
   }
   .form_area {
@@ -474,6 +484,7 @@
         color: #ffffff;
         letter-spacing: 0;
         padding: 10px 112px 10px 112px;
+        cursor: pointer;
       }
     }
   }
@@ -486,6 +497,7 @@
     letter-spacing: 0;
     margin-top: 12px;
     text-decoration: underline;
+    cursor: pointer;
   }
 }
 .selec_txt {

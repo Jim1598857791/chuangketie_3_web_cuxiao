@@ -1,15 +1,15 @@
 <template>
   <div class="page">
-    <lt-button @click="show1 = true">点我显示弹框</lt-button>
+    <lt-button @click="show1 = true">支付弹窗</lt-button>
     <lt-modal v-model="show1" style="background-color: blue;">
       <div class="container">
         <div class="content">
-          <img class="content_head_img" src="./img/pay_head_img.png" alt>
+          <img class="content_head_img" src="./img/pay_head_img.png" alt="我来组成头部">
 
           <div class="pay_contents">
             <div class="pay_content">
               <div class="pay_content_tag">加送1年</div>
-              <div class="pay_content_detail">
+              <div class="pay_content_detail" style="background-position: -252px -313px;">
                 <div class="pay_content_detail_title">5人版本/年</div>
                 <div class="pay_content_detail_price">
                   <div class="pay_content_detail_price_icon">￥</div>
@@ -40,7 +40,8 @@
 
             <!-- 快捷支付 -->
             <div v-if="quick_pay_show" class="quick_pay_detail">
-              <div class="quick_pay_detail_QR_code">二维码</div>
+              <img src="./img/qrcode_1.png" class="quick_pay_detail_QR_code" alt="二维码">
+
               <div class="quick_pay_detail_info">
                 <div class="quick_pay_detail_info_price">
                   <div class="quick_pay_detail_info_price_icon">￥</div>
@@ -48,8 +49,16 @@
                 </div>
                 <div class="quick_pay_detail_info_des">使用支付宝/微信付款</div>
                 <div class="quick_pay_detail_info_imgs">
-                  <div class="quick_pay_detail_info_img">支付宝</div>
-                  <div class="quick_pay_detail_info_img">微信</div>
+                  <!-- 支付宝 -->
+                  <div
+                    class="quick_pay_detail_info_img"
+                    style="background-position: -377px -245px;"
+                  ></div>
+                  <!-- 微信 -->
+                  <div
+                    class="quick_pay_detail_info_img"
+                    style=" margin-left: 15px; background-position: -416px -245px;"
+                  ></div>
                 </div>
               </div>
             </div>
@@ -98,27 +107,27 @@
             <div class="pay_power_title">专享权益：</div>
             <div class="pay_power_area">
               <div class="pay_power_item">
-                <div class="pay_power_item_img"></div>
+                <div class="pay_power_item_img" style="background-position: -53px -241px;"></div>
                 <div class="pay_power_item_txt" style="width: 75px;">1000款字体</div>
               </div>
               <div class="pay_power_item">
-                <div class="pay_power_item_img"></div>
+                <div class="pay_power_item_img" style="background-position: -105px -241px;"></div>
                 <div class="pay_power_item_txt" style="width: 59px;">40万图片</div>
               </div>
               <div class="pay_power_item">
-                <div class="pay_power_item_img"></div>
+                <div class="pay_power_item_img" style="background-position: -157px -241px;"></div>
                 <div class="pay_power_item_txt" style="width: 70px;">商业授权书</div>
               </div>
               <div class="pay_power_item">
-                <div class="pay_power_item_img"></div>
+                <div class="pay_power_item_img" style="background-position: -209px -241px;"></div>
                 <div class="pay_power_item_txt" style="width: 51px;">印刷9折</div>
               </div>
               <div class="pay_power_item">
-                <div class="pay_power_item_img"></div>
+                <div class="pay_power_item_img" style="background-position: -261px -241px;"></div>
                 <div class="pay_power_item_txt" style="width: 56px;">16G上传</div>
               </div>
               <div class="pay_power_item">
-                <div class="pay_power_item_img"></div>
+                <div class="pay_power_item_img" style="background-position: -313px -241px;"></div>
                 <div class="pay_power_item_txt" style="width: 56px;">企业管理</div>
               </div>
             </div>
@@ -132,15 +141,15 @@
       </div>
     </lt-modal>
 
-    <lt-button @click="show2 = true">点我显示弹框</lt-button>
+    <lt-button @click="show2 = true">下载商业授权书</lt-button>
     <lt-modal v-model="show2" style="background-color: blue;">
       <div class="business_empower">
         <div class="business_title">商业授权状况</div>
         <div class="business_des">填写企业信息，为公司获取商业授权，避免版权风险。</div>
         <div
           class="business_des"
-          style="width: 450px; margin-top: 6px;"
-        >个人用户请在“公司名称”处填写“姓名”,“社会信用代码”处填写“身份证号码”.</div>
+          style="width: 424px; margin-top: 6px;"
+        >个人用户请在“公司名称”处填写“姓名”，“社会信用代码”处填写“身份证号码”。</div>
 
         <form class="form_area" action :model="business_empower_form" rules="rules">
           <div class="form_item">
