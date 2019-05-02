@@ -270,17 +270,22 @@
           style="  margin-left: 200px;  "
         >your browser does not support the video tag</video>
       </div>
-      <div class="middle_2" style=" padding-top: 116px;">
+      <div class="middle_2" style=" 
+  
+      padding-top: 116px; 
+      ">
         <img
           class="middle_2_left_2"
           style=" width: 645.8px;
-          height: 350px;"
+          height: 350px;
+             position: relative;
+      left: -170px;"
           src="./img/copyright_protect.png"
           alt="版权保障"
         >
 
         <div class="middle_2_right" style="width:360px; margin-top:64px;">
-          <div class="middle_2_right_title" style=" justify-content: flex-end; ">
+          <div class="middle_2_right_title" style="justify-content: flex-end; ">
             <div class="middle_2_right_title_1" style="width:152px;">版权保障</div>
           </div>
           <div class="middle_2_right_des" style="width:360px;">带有企业版权标识的作品均在国家版权局登记</div>
