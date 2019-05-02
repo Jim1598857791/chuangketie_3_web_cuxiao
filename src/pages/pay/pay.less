@@ -1,16 +1,13 @@
 .container {
   width: 692px;
-  height: 645px;
+  height: 640px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-
-  // margin: 100px 0px 0px 100px;
-  // background-color: bisque;
 }
 .content {
   width: 660px;
-  height: 645px;
+  height: 640px;
   background: #f9f9f9;
   display: flex;
   flex-direction: column;
@@ -21,12 +18,13 @@
   width: 16px;
   height: 16px;
   margin-left: 16px;
+  cursor: pointer;
 }
 .content_head_img {
   width: 660px;
   height: 68px;
 }
-
+// 支付内容
 .pay_contents {
   width: 620px;
   height: 130.3px;
@@ -91,7 +89,7 @@
     }
   }
 }
-
+// 支付方式
 .pay_way {
   width: 620px;
   //   height: 270px;
@@ -126,6 +124,7 @@
       border-bottom: none;
     }
   }
+  // 快捷支付
   .quick_pay_detail {
     width: 620px;
     height: 222px;
@@ -151,19 +150,30 @@
         height: 40px;
         display: flex;
         flex-direction: row;
+        align-items: baseline;
         .quick_pay_detail_info_price_icon {
           width: 10px;
           height: 40px;
+          font-family: PingFangSC-Semibold;
+          font-size: 16px;
+          color: #de3033;
         }
         .quick_pay_detail_info_price_num {
           width: 104px;
           height: 40px;
           margin-left: 2px;
+          font-family: PingFangSC-Semibold;
+          font-size: 28px;
+          color: #de3033;
         }
       }
       .quick_pay_detail_info_des {
         width: 135px;
         height: 14px;
+        font-family: NotoSansHans-Regular;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.4);
+        text-align: center;
       }
       .quick_pay_detail_info_imgs {
         width: 64px;
@@ -180,6 +190,7 @@
       }
     }
   }
+  // 余额支付
   .balance_pay_detail {
     width: 620px;
     height: 222px;
@@ -238,6 +249,7 @@
       cursor: pointer;
     }
   }
+  // 对公转账
   .company_pay_detail {
     width: 620px;
     height: 222px;
@@ -349,6 +361,7 @@
     }
   }
 }
+// 支付弹窗底部按钮
 .pay_power {
   width: 620px;
   height: 110px;
@@ -404,7 +417,7 @@
   text-decoration: underline;
   cursor: pointer;
 }
-
+// 商业授权书
 .business_empower {
   width: 510px;
   height: 592px;

@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <lt-button @click="show1 = true">支付弹窗</lt-button>
-    <lt-modal v-model="show1" style="background-color: blue;">
+    <lt-modal v-model="show1">
       <div class="container">
         <div class="content">
           <img class="content_head_img" src="./img/pay_head_img.png" alt="我来组成头部">
@@ -135,34 +135,34 @@
           <div class="vip_agreement">会员协议</div>
         </div>
 
-        <div class="close_btn">
+        <div class="close_btn" @click="show1 = false" v-on:click="close_pay">
           <lt-icon type="close"></lt-icon>
         </div>
       </div>
     </lt-modal>
 
     <lt-button @click="show2 = true">下载商业授权书</lt-button>
-    <lt-modal v-model="show2" style="background-color: blue;">
+    <lt-modal v-model="show2">
       <div class="business_empower">
         <div class="business_title">商业授权状况</div>
         <div class="business_des">填写企业信息，为公司获取商业授权，避免版权风险。</div>
         <div
           class="business_des"
-          style="width: 424px; margin-top: 6px;"
+          style="width: 435px; margin-top: 6px;"
         >个人用户请在“公司名称”处填写“姓名”，“社会信用代码”处填写“身份证号码”。</div>
 
-        <form class="form_area" action :model="business_empower_form" rules="rules">
+        <form class="form_area" action :model="business_empower_form">
           <div class="form_item">
             <div class="form_item_icon">*</div>
-            <input class="form_item_input" type="text" placeholder="公司  名称（即是授权主体，不可更改）">
+            <input class="form_item_input" type="text" placeholder="    公司名称（即是授权主体，不可更改）">
           </div>
           <div class="form_item">
             <div class="form_item_icon">*</div>
-            <input class="form_item_input" type="text" placeholder="手机号码">
+            <input class="form_item_input" type="text" placeholder="    手机号码">
           </div>
           <div class="form_item">
             <div class="form_item_icon">*</div>
-            <input class="form_item_input" type="text" placeholder="企业邮箱">
+            <input class="form_item_input" type="text" placeholder="    企业邮箱">
           </div>
           <div class="form_item">
             <select
@@ -171,7 +171,7 @@
               id="aa1"
               style="width: 156px; margin-left: 12px;"
             >
-              <option class="selec_txt" value disabled selected hidden>所在行业</option>
+              <option class="selec_txt" value disabled selected hidden>&nbsp;&nbsp;&nbsp;所在行业</option>
               <option class="selec_txt" value="0">行业一</option>
               <option class="selec_txt" value="1">行业二</option>
               <option class="selec_txt" value="2">行业三</option>
@@ -184,7 +184,7 @@
               style="width: 156px; "
               placeholder=" "
             >
-              <option value disabled selected hidden>企业规模</option>
+              <option value disabled selected hidden>&nbsp;&nbsp;&nbsp;企业规模</option>
               <option value="0">规模一</option>
               <option value="1">规模二</option>
               <option value="2">规模三</option>
@@ -206,7 +206,7 @@
           </div>
         </form>
 
-        <div class="form_item_btn_close">关闭</div>
+        <div class="form_item_btn_close" @click="show2 = false" v-on:click="close_form">关闭</div>
       </div>
     </lt-modal>
   </div>
@@ -214,7 +214,6 @@
 
 <script>
 export default {
-  name: "index",
   data() {
     return {
       business_empower_form: {
@@ -225,68 +224,34 @@ export default {
         scale: "", //规模
         adddress: ""
       },
-      msg: "index page",
       show1: false,
       show2: false,
       quick_pay_show: true,
       balance_pay_show: false,
-      company_pay_show: false,
-      rules: {
-        selectedOptions: [
-          {
-            type: "array",
-            required: true,
-            message: "请选择故障所在区域",
-            trigger: "change"
-          }
-        ],
-        detailAdd: [
-          { required: true, message: "请输入详细地址", trigger: "change" }
-        ]
-      }
+      company_pay_show: false
     };
   },
   methods: {
-    quick_pay_fun: function(event) {
+    quick_pay_fun: function() {
       this.quick_pay_show = true;
       this.balance_pay_show = false;
       this.company_pay_show = false;
-      console.log(
-        this.quick_pay_show,
-        this.balance_pay_show,
-        this.company_pay_show
-      );
     },
-    balance_pay_fun: function(event) {
+    balance_pay_fun: function() {
       this.quick_pay_show = false;
       this.balance_pay_show = true;
       this.company_pay_show = false;
-      console.log(
-        this.quick_pay_show,
-        this.balance_pay_show,
-        this.company_pay_show
-      );
     },
-    company_pay_fun: function(event) {
+    company_pay_fun: function() {
       this.quick_pay_show = false;
       this.balance_pay_show = false;
       this.company_pay_show = true;
-      console.log(
-        this.quick_pay_show,
-        this.balance_pay_show,
-        this.company_pay_show
-      );
     },
-    showOtherVideo() {
-      // 原文：https://blog.csdn.net/u011613356/article/details/77449868
-      let _this = this;
-      setTimeout(function() {
-        _this.flag = _this._dom.paused;
-        if (!_this.flag) {
-          _this.showOtherVideo();
-          console.log(_this.flag);
-        }
-      }, 1000);
+    close_pay: function() {
+      console.log("关闭支付弹窗");
+    },
+    close_form: function() {
+      console.log("关闭，申请表单");
     }
   }
 };

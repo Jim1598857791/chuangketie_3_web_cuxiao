@@ -30,7 +30,7 @@
         <div class="head_2_btn">
           <div class="head_2_btn_img" style="background-position: -260px -40px;"></div>
           <div class="head_2_btn_des_1" style="width:94px;">40万图片</div>
-          <div class="head_2_btn_des_2" style="width:105px;">可免费商业</div>
+          <div class="head_2_btn_des_2" style="width:105px;">可免费商用</div>
         </div>
 
         <div class="head_2_btn">
@@ -109,6 +109,17 @@
           </div>
         </div>
       </div>
+      <!-- 按钮 -->
+      <div class="head_buttons" v-bind:style="{top:windowsHeight+'px'}">
+        <div class="head_button2">
+          <img src="./img/222.png" class="head_btn_img" alt>
+          <!-- <lt-icon class="head_btn_img" type="ios-arrow-up"></lt-icon> -->
+          <div class="head_button2_txt">客服</div>
+        </div>
+        <div class="head_button1">
+          <lt-icon class="head_btn_img" type="ios-arrow-up"></lt-icon>
+        </div>
+      </div>
 
       <div class="head_4_border">
         <div class="head_4">
@@ -182,10 +193,10 @@
             <div class="head_4_1">
               <div class="head_4_1_top">加送2年</div>
               <div class="head_4_1_mid">企业版权VIP/50人</div>
-              <div class="head_4_1_price">
+              <div class="head_4_1_price" style="width:190px;">
                 <div class="head_4_1_price_icon">￥</div>
                 <div class="head_4_1_price_num" style="width:107px;">10000</div>
-                <div class="head_4_1_price_unit">元/年</div>
+                <div class="head_4_1_price_unit">元/2年</div>
               </div>
               <div class="head_4_1_btn">立即开通</div>
             </div>
@@ -308,7 +319,7 @@
           <div class="middle_2_right_title" style="width:256px;   justify-content: flex-end; ">
             <div class="middle_2_right_title_1" style="width:152px;">企业管理</div>
           </div>
-          <div class="middle_2_right_des" style="width:240px;">管理设计和成员，成本直降50</div>
+          <div class="middle_2_right_des" style="width:250px;">管理设计和成员，成本直降50%</div>
           <div class="middle_2_right_btn">开通立享</div>
         </div>
       </div>
@@ -415,9 +426,17 @@
 
 <script>
 export default {
+  created() {
+    console.log("获取的屏幕宽高" + window.screen.height);
+    console.log("获取的屏幕宽高" + this.styleObject);
+  },
   name: "index",
   data() {
     return {
+      top: "300px",
+
+      windowsHeight: screen.height / 2,
+
       msg: "index page",
       _dom: "",
       videoSrc: [
@@ -441,17 +460,6 @@ export default {
     playClick() {
       this.isPlay = !this.isPlay;
       this.playStatus = "autoplay";
-    },
-
-    showOtherVideo() {
-      let _this = this;
-      setTimeout(function() {
-        _this.flag = _this._dom.paused;
-        if (!_this.flag) {
-          _this.showOtherVideo();
-          console.log(_this.flag);
-        }
-      }, 1000);
     }
   }
 };
