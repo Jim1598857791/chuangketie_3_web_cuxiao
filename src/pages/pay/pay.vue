@@ -132,81 +132,15 @@
               </div>
             </div>
           </div>
-          <div class="vip_agreement">会员协议</div>
+          <a
+            href="http://edu.chuangkit.com/forum.php?mod=viewthread&tid=959&extra="
+            class="vip_agreement"
+          >会员协议</a>
         </div>
 
         <div class="close_btn" @click="show1 = false" v-on:click="close_pay">
           <lt-icon type="close"></lt-icon>
         </div>
-      </div>
-    </lt-modal>
-
-    <lt-button @click="show2 = true">下载商业授权书</lt-button>
-    <lt-modal v-model="show2">
-      <div class="business_empower">
-        <div class="business_title">商业授权状况</div>
-        <div class="business_des">填写企业信息，为公司获取商业授权，避免版权风险。</div>
-        <div
-          class="business_des"
-          style="width: 435px; margin-top: 6px;"
-        >个人用户请在“公司名称”处填写“姓名”，“社会信用代码”处填写“身份证号码”。</div>
-
-        <form class="form_area" action :model="business_empower_form">
-          <div class="form_item">
-            <div class="form_item_icon">*</div>
-            <input class="form_item_input" type="text" placeholder="    公司名称（即是授权主体，不可更改）">
-          </div>
-          <div class="form_item">
-            <div class="form_item_icon">*</div>
-            <input class="form_item_input" type="text" placeholder="    手机号码">
-          </div>
-          <div class="form_item">
-            <div class="form_item_icon">*</div>
-            <input class="form_item_input" type="text" placeholder="    企业邮箱">
-          </div>
-          <div class="form_item">
-            <select
-              class="form_item_input selec_txt"
-              name="aaq"
-              id="aa1"
-              style="width: 156px; margin-left: 12px;"
-            >
-              <option class="selec_txt" value disabled selected hidden>&nbsp;&nbsp;&nbsp;所在行业</option>
-              <option class="selec_txt" value="0">行业一</option>
-              <option class="selec_txt" value="1">行业二</option>
-              <option class="selec_txt" value="2">行业三</option>
-              <option class="selec_txt" value="3">行四一</option>
-            </select>
-            <select
-              class="form_item_input selec_txt"
-              name="aas"
-              id="aa2"
-              style="width: 156px; "
-              placeholder=" "
-            >
-              <option value disabled selected hidden>&nbsp;&nbsp;&nbsp;企业规模</option>
-              <option value="0">规模一</option>
-              <option value="1">规模二</option>
-              <option value="2">规模三</option>
-              <option value="3">规模一</option>
-            </select>
-          </div>
-          <div class="form_item">
-            <div class="form_item_icon">*</div>
-            <input class="form_item_input" type="text" placeholder="联系地址">
-          </div>
-          <div
-            class="form_item"
-            style="display: flex; 
-            flex-direction: row; 
-            justify-content: center"
-          >
-            <div class="form_item_icon"></div>
-            <div class="form_item_btn_download" style="margin-left:1px;">下载商业授权书</div>
-          </div>
-        </form>
-
-        <div class="form_item_btn_close" @click="show2 = false" v-on:click="close_form">关闭</div>
       </div>
     </lt-modal>
   </div>
