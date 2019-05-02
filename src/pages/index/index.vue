@@ -68,7 +68,7 @@
             <div class="head_3_1_price_num">1200</div>
             <div class="head_3_1_price_unit">元/年</div>
           </div>
-          <div class="head_3_1_btn">立即开通</div>
+          <div class="head_3_1_btn" @click="pay_fun('vip_1_1200')">立即开通</div>
         </div>
 
         <!-- 小块 -->
@@ -80,21 +80,10 @@
             <div class="head_3_1_price_num">2400</div>
             <div class="head_3_1_price_unit">元/年</div>
           </div>
-          <div class="head_3_1_btn">立即开通</div>
+          <div class="head_3_1_btn" @click="pay_fun('vip_10_2400')">立即开通</div>
         </div>
 
         <!-- 大块-->
-        <!-- <div class="head_3_1">
-          <div class="head_3_1_top">加送1年</div>
-          <div class="head_3_1_tag">超值特惠</div>
-          <div class="head_3_1_mid head_3_1_mid_top_margin">企业版权VIP/5人</div>
-          <div class="head_3_1_price">
-            <div class="head_3_1_price_icon">￥</div>
-            <div class="head_3_1_price_num">1600</div>
-            <div class="head_3_1_price_unit">元/年</div>
-          </div>
-          <div class="head_3_1_btn">立即开通</div>
-        </div>-->
         <div class="head_3_2_area">
           <div class="head_3_2">
             <div class="head_3_2_top">加送1年</div>
@@ -105,12 +94,12 @@
               <div class="head_3_2_price_num">1600</div>
               <div class="head_3_2_price_unit">元/年</div>
             </div>
-            <div class="head_3_2_btn">立即开通</div>
+            <div class="head_3_2_btn" @click="pay_fun('vip_5_1600')">立即开通</div>
           </div>
         </div>
       </div>
       <!-- 按钮 -->
-      <div class="head_buttons" v-bind:style="{top:windowsHeight+'px'}">
+      <div class="head_buttons">
         <div class="head_button2">
           <img src="./img/222.png" class="head_btn_img" alt>
           <!-- <lt-icon class="head_btn_img" type="ios-arrow-up"></lt-icon> -->
@@ -135,7 +124,7 @@
                 <div class="head_4_1_price_num">1920</div>
                 <div class="head_4_1_price_unit">元/2年</div>
               </div>
-              <div class="head_4_1_btn">立即开通</div>
+              <div class="head_4_1_btn" @click="pay_fun('vip_1_1920')">立即开通</div>
             </div>
             <div class="head_4_1">
               <div class="head_4_1_top">加送2年</div>
@@ -145,7 +134,7 @@
                 <div class="head_4_1_price_num">2560</div>
                 <div class="head_4_1_price_unit">元/2年</div>
               </div>
-              <div class="head_4_1_btn">立即开通</div>
+              <div class="head_4_1_btn" @click="pay_fun('vip_5_2560')">立即开通</div>
             </div>
             <div class="head_4_1">
               <div class="head_4_1_top">加送2年</div>
@@ -155,7 +144,7 @@
                 <div class="head_4_1_price_num">4200</div>
                 <div class="head_4_1_price_unit">元/2年</div>
               </div>
-              <div class="head_4_1_btn">立即开通</div>
+              <div class="head_4_1_btn" @click="pay_fun('vip_10_4200')">立即开通</div>
             </div>
           </div>
 
@@ -168,7 +157,7 @@
                 <div class="head_4_1_price_num">4500</div>
                 <div class="head_4_1_price_unit">元/年</div>
               </div>
-              <div class="head_4_1_btn">立即开通</div>
+              <div class="head_4_1_btn" @click="pay_fun('vip_1_1200')">立即开通</div>
             </div>
             <div class="head_4_1">
               <div class="head_4_1_top">加送1年</div>
@@ -178,7 +167,7 @@
                 <div class="head_4_1_price_num">6000</div>
                 <div class="head_4_1_price_unit">元/年</div>
               </div>
-              <div class="head_4_1_btn">立即开通</div>
+              <div class="head_4_1_btn" @click="pay_fun('vip_50_6000')">立即开通</div>
             </div>
             <div class="head_4_1">
               <div class="head_4_1_top">加送2年</div>
@@ -188,7 +177,7 @@
                 <div class="head_4_1_price_num">8000</div>
                 <div class="head_4_1_price_unit">元/2年</div>
               </div>
-              <div class="head_4_1_btn">立即开通</div>
+              <div class="head_4_1_btn" @click="pay_fun('vip_25_8000')">立即开通</div>
             </div>
             <div class="head_4_1">
               <div class="head_4_1_top">加送2年</div>
@@ -198,7 +187,7 @@
                 <div class="head_4_1_price_num" style="width:107px;">10000</div>
                 <div class="head_4_1_price_unit">元/2年</div>
               </div>
-              <div class="head_4_1_btn">立即开通</div>
+              <div class="head_4_1_btn" @click="pay_fun('vip_50_10000')">立即开通</div>
             </div>
           </div>
         </div>
@@ -208,6 +197,7 @@
     <!-- ——-----------middle------middle-------middle-----------middle------middle ----------middle--------  -->
     <div class="middle">
       <img class="middle_title_img" src="./img/vip_quanyi.png" alt>
+      <!-- 会员模板全部免费 -->
       <div class="middle_1" style="height: 552px;">
         <div class="middle_1_left">
           <div class="middle_1_left_title">
@@ -215,7 +205,7 @@
             <div class="middle_1_left_title_2">免费</div>
           </div>
           <div class="middle_1_left_des">满足所有营销、新媒体场景需求</div>
-          <div class="middle_1_left_btn">开通立享</div>
+          <div class="middle_1_left_btn" @click="pay_fun('vip_666')">开通立享</div>
         </div>
 
         <video
@@ -228,6 +218,7 @@
         >your browser does not support the video tag</video>
       </div>
 
+      <!-- 300款专属商用字体 -->
       <div class="middle_2">
         <div class="middle_2_left_font">
           <img src="./img/font_backgroung.png" alt="背景" class="middle_2_left_font_background">
@@ -247,7 +238,7 @@
             <div class="middle_2_right_title_1" style=" width: 228px;margin-left:4px;">专属商用字体</div>
           </div>
           <div class="middle_2_right_des">高端大气，正版版权，展现企业形象</div>
-          <div class="middle_2_right_btn">开通立享</div>
+          <div class="middle_2_right_btn" @click="pay_fun('vip_666')">开通立享</div>
         </div>
       </div>
       <div class="middle_1" style=" padding-top: 100px;">
@@ -257,7 +248,7 @@
             <div class="middle_1_left_title_1" style="width: 266px;">专属可商用图片</div>
           </div>
           <div class="middle_1_left_des">满足所有营销、新媒体场景需求</div>
-          <div class="middle_1_left_btn">开通立享</div>
+          <div class="middle_1_left_btn" @click="pay_fun('vip_666')">开通立享</div>
         </div>
 
         <video
@@ -270,26 +261,21 @@
           style="  margin-left: 200px;  "
         >your browser does not support the video tag</video>
       </div>
-      <div class="middle_2" style=" 
-  
-      padding-top: 116px; 
-      ">
+      <div class="middle_2" style="padding-top: 116px;">
         <img
           class="middle_2_left_2"
-          style=" width: 645.8px;
-          height: 350px;
-             position: relative;
-      left: -170px;"
+          style=" width: 645.8px;   height: 350px;
+             position: relative; left: -170px;"
           src="./img/copyright_protect.png"
           alt="版权保障"
         >
 
         <div class="middle_2_right" style="width:360px; margin-top:64px;">
-          <div class="middle_2_right_title" style="justify-content: flex-end; ">
+          <div class="middle_2_right_title" style=" justify-content: flex-end; ">
             <div class="middle_2_right_title_1" style="width:152px;">版权保障</div>
           </div>
           <div class="middle_2_right_des" style="width:360px;">带有企业版权标识的作品均在国家版权局登记</div>
-          <div class="middle_2_right_btn">开通立享</div>
+          <div class="middle_2_right_btn" @click="pay_fun('vip_666')">开通立享</div>
         </div>
       </div>
       <div class="middle_1" style=" padding-top: 130px;">
@@ -298,14 +284,12 @@
             <div class="middle_1_left_title_1" style="width:266px;">签订商业授权书</div>
           </div>
           <div class="middle_1_left_des" style="width:234px;">提供法律保障，彻底避免侵权</div>
-          <div class="middle_1_left_btn">开通立享</div>
+          <div class="middle_1_left_btn" @click="pay_fun('vip_666')">开通立享</div>
         </div>
 
         <img
           class="middle_1_right"
-          style=" width: 580px;
-          height: 322px;
-          margin-left:354px;"
+          style=" width: 580px; height: 322px; margin-left:354px;"
           src="./img/business_enpower.png"
           alt="商业授权"
         >
@@ -314,8 +298,7 @@
         <div class="middle_2_left_2">
           <img
             class="middle_1_right"
-            style=" width: 684px;
-            height: 330px;"
+            style=" width: 684px; height: 330px;"
             src="./img/company_manage.png"
             alt="企业管理"
           >
@@ -324,8 +307,8 @@
           <div class="middle_2_right_title" style="width:256px;   justify-content: flex-end; ">
             <div class="middle_2_right_title_1" style="width:152px;">企业管理</div>
           </div>
-          <div class="middle_2_right_des" style="width:250px;">管理设计和成员，成本直降50%</div>
-          <div class="middle_2_right_btn">开通立享</div>
+          <div class="middle_2_right_des" style="width:256px;">管理设计和成员，成本直降50%</div>
+          <div class="middle_2_right_btn" @click="pay_fun('vip_666')">开通立享</div>
         </div>
       </div>
 
@@ -336,18 +319,18 @@
             <div class="middle_1_left_title_2" style="width:61px;">9折</div>
           </div>
           <div class="middle_1_left_des" style="width:328px;">名片、易拉宝等46种精选品类，品质保障</div>
-          <div class="middle_1_left_btn">开通立享</div>
+          <div class="middle_1_left_btn" @click="pay_fun('vip_666')">开通立享</div>
         </div>
-        <div class="middle_1_right">
-          <video
-            id="myvideo"
-            :src="videoSrc[3]"
-            :poster="videoImg"
-            :muted="muteStatus"
-            :autoplay="playStatus"
-            :loop="loopPlay"
-          >your browser does not support the video tag</video>
-        </div>
+
+        <video
+          class="middle_1_right"
+          style="margin-left:222px;"
+          :src="videoSrc[3]"
+          :poster="videoImg"
+          :muted="muteStatus"
+          :autoplay="playStatus"
+          :loop="loopPlay"
+        >your browser does not support the video tag</video>
       </div>
       <div class="middle_2" style=" padding-top: 120px;">
         <video
@@ -365,7 +348,7 @@
             <div class="middle_2_right_title_2" style="width:72px;margin-left:8px;">16G</div>
           </div>
           <div class="middle_2_right_des" style="width:288px;">团队全员标配，更大空间，更多自由</div>
-          <div class="middle_2_right_btn">开通立享</div>
+          <div class="middle_2_right_btn" @click="pay_fun('vip_666')">开通立享</div>
         </div>
       </div>
     </div>
@@ -426,24 +409,157 @@
       </div>
     </div>
     <img class="bottom_xuanfu" src="./img/bottom_xuanfu.png" alt="底部悬浮框">
+
+    <!-- --------支付弹窗！！！-------支付弹窗！！！----支付弹窗！！！--------支付弹窗！！！------支付弹窗！！！-- -->
+    <lt-modal v-model="show1">
+      <div class="container1">
+        <div class="content">
+          <img class="content_head_img" src="./img/pay_head_img.png" alt="我来组成头部">
+
+          <div class="pay_contents">
+            <div class="pay_content">
+              <div class="pay_content_tag">加送1年</div>
+              <div class="pay_content_detail" style="background-position: -252px -313px;">
+                <div class="pay_content_detail_title">5人版本/年</div>
+                <div class="pay_content_detail_price">
+                  <div class="pay_content_detail_price_icon">￥</div>
+                  <div class="pay_content_detail_price_num">1600</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pay_way">
+            <div class="pay_way_btns">
+              <div
+                class="pay_way_btn"
+                v-on:click="quick_pay_fun"
+                v-bind:class="{ pay_way_btn_chosed: quick_pay_show }"
+              >快捷支付</div>
+              <div
+                class="pay_way_btn"
+                v-on:click="balance_pay_fun"
+                v-bind:class="{ pay_way_btn_chosed: balance_pay_show }"
+              >余额支付</div>
+              <div
+                class="pay_way_btn"
+                v-on:click="company_pay_fun"
+                v-bind:class="{ pay_way_btn_chosed: company_pay_show }"
+              >对公转账</div>
+              <div class="pay_way_btn"></div>
+            </div>
+
+            <!-- 快捷支付 -->
+            <div v-if="quick_pay_show" class="quick_pay_detail">
+              <img src="./img/qrcode_1.png" class="quick_pay_detail_QR_code" alt="二维码">
+
+              <div class="quick_pay_detail_info">
+                <div class="quick_pay_detail_info_price">
+                  <div class="quick_pay_detail_info_price_icon">￥</div>
+                  <div class="quick_pay_detail_info_price_num">1600.00</div>
+                </div>
+                <div class="quick_pay_detail_info_des">使用支付宝/微信付款</div>
+                <div class="quick_pay_detail_info_imgs">
+                  <!-- 支付宝 -->
+                  <div
+                    class="quick_pay_detail_info_img"
+                    style="background-position: -377px -245px;"
+                  ></div>
+                  <!-- 微信 -->
+                  <div
+                    class="quick_pay_detail_info_img"
+                    style=" margin-left: 15px; background-position: -416px -245px;"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 余额支付 -->
+            <div v-if="balance_pay_show" class="balance_pay_detail">
+              <div class="balance_pay_detail_info">
+                <div class="balance_pay_detail_info_txt">账户余额：</div>
+                <div class="balance_pay_detail_info_price_icon">￥</div>
+                <div class="balance_pay_detail_info_price_num">0.00</div>
+                <div class="balance_pay_detail_info_txt">应付金额：</div>
+                <div class="balance_pay_detail_info_price_icon">￥</div>
+                <div class="balance_pay_detail_info_price_num">1600.00</div>
+              </div>
+              <div class="balance_pay_btn">立即购买</div>
+            </div>
+            <!-- 对公支付 -->
+            <div v-if="company_pay_show" class="company_pay_detail">
+              <div class="company_pay_detail_info1">
+                <div class="company_pay_detail_info1_1">收款公司名</div>
+                <div class="company_pay_detail_info1_2">北京艺源酷科技有限公司</div>
+              </div>
+              <div class="company_pay_detail_info1">
+                <div class="company_pay_detail_info1_1">收款账户</div>
+                <div class="company_pay_detail_info1_2">1373 6151 6010 0012 45</div>
+              </div>
+              <div class="company_pay_detail_info1">
+                <div class="company_pay_detail_info1_1">开户行名称</div>
+                <div class="company_pay_detail_info1_2">广发银行股份有限公司北京海淀支行</div>
+              </div>
+
+              <div class="company_pay_detail_info2">
+                <div class="company_pay_detail_info2_1">共计：</div>
+                <div class="company_pay_detail_info2_2">1600.00</div>
+                <div class="company_pay_detail_info2_3">元</div>
+              </div>
+              <div class="company_pay_detail_info3">
+                <div class="company_pay_detail_info_btn">确认使用对公转账</div>
+                <div class="company_pay_detail_info_btn_des">到账时间：广发1~2天，跨行3~5天</div>
+              </div>
+              <div class="company_pay_detail_info4">线下汇款请直接向您在创客贴的专属账户汇款，系统会将汇款直接匹配到您的创客贴订单。</div>
+            </div>
+          </div>
+
+          <div class="pay_power">
+            <div class="pay_power_title">专享权益：</div>
+            <div class="pay_power_area">
+              <div class="pay_power_item">
+                <div class="pay_power_item_img" style="background-position: -53px -241px;"></div>
+                <div class="pay_power_item_txt" style="width: 75px;">1000款字体</div>
+              </div>
+              <div class="pay_power_item">
+                <div class="pay_power_item_img" style="background-position: -105px -241px;"></div>
+                <div class="pay_power_item_txt" style="width: 59px;">40万图片</div>
+              </div>
+              <div class="pay_power_item">
+                <div class="pay_power_item_img" style="background-position: -157px -241px;"></div>
+                <div class="pay_power_item_txt" style="width: 70px;">商业授权书</div>
+              </div>
+              <div class="pay_power_item">
+                <div class="pay_power_item_img" style="background-position: -209px -241px;"></div>
+                <div class="pay_power_item_txt" style="width: 51px;">印刷9折</div>
+              </div>
+              <div class="pay_power_item">
+                <div class="pay_power_item_img" style="background-position: -261px -241px;"></div>
+                <div class="pay_power_item_txt" style="width: 56px;">16G上传</div>
+              </div>
+              <div class="pay_power_item">
+                <div class="pay_power_item_img" style="background-position: -313px -241px;"></div>
+                <div class="pay_power_item_txt" style="width: 56px;">企业管理</div>
+              </div>
+            </div>
+          </div>
+          <a
+            href="http://edu.chuangkit.com/forum.php?mod=viewthread&tid=959&extra="
+            class="vip_agreement"
+          >会员协议</a>
+        </div>
+
+        <div class="close_btn" @click="show1 = false" v-on:click="close_pay">
+          <lt-icon type="close"></lt-icon>
+        </div>
+      </div>
+    </lt-modal>
   </div>
 </template>
 
 <script>
 export default {
-  created() {
-    console.log("获取的屏幕宽高" + window.screen.height);
-    console.log("获取的屏幕宽高" + this.styleObject);
-  },
-  name: "index",
   data() {
     return {
-      top: "300px",
-
-      windowsHeight: screen.height / 2,
-
-      msg: "index page",
-      _dom: "",
       videoSrc: [
         "../../../static/vedio/template.mp4",
         "../../../static/vedio/font.mp4",
@@ -451,20 +567,40 @@ export default {
         "../../../static/vedio/yinshua.mp4",
         "../../../static/vedio/upload.mp4"
       ],
-
       videoImg: "",
-      //  videoImg : "http://static.fdc.com.cn/avatar/usercenter/5996999fa093c04d4b4dbaf1_162.jpg",
       playStatus: "",
       loopPlay: true,
       muteStatus: true,
       isMute: true,
-      isPlay: false
+      isPlay: false,
+      show1: false,
+      quick_pay_show: true,
+      balance_pay_show: false,
+      company_pay_show: false
     };
   },
   methods: {
-    playClick() {
-      this.isPlay = !this.isPlay;
-      this.playStatus = "autoplay";
+    quick_pay_fun: function() {
+      this.quick_pay_show = true;
+      this.balance_pay_show = false;
+      this.company_pay_show = false;
+    },
+    balance_pay_fun: function() {
+      this.quick_pay_show = false;
+      this.balance_pay_show = true;
+      this.company_pay_show = false;
+    },
+    company_pay_fun: function() {
+      this.quick_pay_show = false;
+      this.balance_pay_show = false;
+      this.company_pay_show = true;
+    },
+    pay_fun: function(event) {
+      console.log("pay_fun传入参数：", event);
+      this.show1 = true;
+    },
+    close_pay: function() {
+      console.log("关闭支付弹窗");
     }
   }
 };

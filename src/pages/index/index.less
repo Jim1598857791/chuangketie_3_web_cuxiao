@@ -34,7 +34,7 @@
   align-items: center;
 
   position: fixed;
-  top: 30px;
+  top: 42%;
   right: 0px;
   .head_button1 {
     width: 50px;
@@ -61,7 +61,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 
     cursor: pointer;
 
@@ -374,6 +373,7 @@
       line-height: 40px;
       cursor: pointer;
       text-align: center;
+      box-shadow: 2px 6px 24px 0 rgba(46, 50, 68, 0.3);
     }
   }
   // head_3_1 hover 自身变化
@@ -389,6 +389,7 @@
       font-size: 20px;
       color: #eeb86e;
       cursor: pointer;
+      box-shadow: 2px 6px 24px 0 rgba(46, 50, 68, 0.3);
     }
   }
   // head_3_1 hover head_3_2变化 兄弟元素
@@ -582,6 +583,7 @@
       .head_4_1_btn {
         width: 120px;
         height: 36px;
+        line-height: 32px;
         margin-top: 11px;
         border: 2px solid #2b2c31;
         border-radius: 20px;
@@ -592,15 +594,16 @@
         text-align: center;
         line-height: 32px;
         cursor: pointer;
-        // .head_4_1_btn_txt {
-        //   width: 64px;
-        //   height: 22px;
-        //   margin: 6px 30px 6px 30px;
-        //   font-family: PingFangSC-Semibold;
-        //   font-size: 16px;
-        //   color: #363537;
-        //   text-align: center;
-        // }
+      }
+    }
+    .head_4_1:hover {
+      background-image: linear-gradient(-180deg, #fff0d5 0%, #ffd598 100%);
+      .head_4_1_btn {
+        background-image: linear-gradient(0deg, #2b2c31 0%, #483213 100%);
+        border-radius: 20px;
+        font-family: PingFangSC-Semibold;
+
+        color: #eeb86e;
       }
     }
   }
@@ -688,21 +691,22 @@
         border: 2px solid #2b2c31;
         border-radius: 20px;
 
-        line-height: 36px;
+        line-height: 32px;
         font-family: PingFangSC-Semibold;
         font-size: 16px;
         color: #363537;
         text-align: center;
         cursor: pointer;
-        // .head_4_1_btn_txt {
-        //   width: 64px;
-        //   height: 22px;
-        //   margin: 6px 30px 6px 30px;
-        //   font-family: PingFangSC-Semibold;
-        //   font-size: 16px;
-        //   color: #363537;
-        //   text-align: center;
-        // }
+      }
+    }
+    .head_4_1:hover {
+      background-image: linear-gradient(-180deg, #fff0d5 0%, #ffd598 100%);
+      .head_4_1_btn {
+        background-image: linear-gradient(0deg, #2b2c31 0%, #483213 100%);
+        border-radius: 20px;
+        font-family: PingFangSC-Semibold;
+
+        color: #eeb86e;
       }
     }
   }
@@ -732,13 +736,14 @@
   padding: 70px 360px 0px 360px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   .middle_1_left {
     width: 304px;
     height: 226px;
     margin-top: 80px;
     display: flex;
     flex-direction: column;
+
     justify-content: flex-start;
     .middle_1_left_title {
       width: 304px;
@@ -776,7 +781,6 @@
       font-family: PingFangSC-Regular;
       font-size: 18px;
       color: rgba(0, 0, 0, 0.6);
-      
     }
     .middle_1_left_btn {
       width: 160px;
@@ -790,6 +794,14 @@
       text-align: center;
       line-height: 48px;
       cursor: pointer;
+    }
+    .middle_1_left_btn:hover {
+      background: #2e3244;
+      box-shadow: 2px 6px 24px 0 rgba(46, 50, 68, 0.3);
+      border-radius: 30px;
+      font-family: NotoSansHans-Black;
+      font-size: 20px;
+      color: #f0d590;
     }
   }
   .middle_1_right {
@@ -809,7 +821,7 @@
   background-color: #f6f7fb;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   background-image: url("img/middle_background.png");
 
   .middle_2_left_font {
@@ -898,8 +910,16 @@
       font-size: 20px;
       color: #f0d590;
       text-align: center;
- line-height: 48px;
+      line-height: 48px;
       cursor: pointer;
+    }
+    .middle_2_right_btn:hover{
+      background: #2e3244;
+      box-shadow: 2px 6px 24px 0 rgba(46, 50, 68, 0.3);
+      border-radius: 30px;
+      font-family: NotoSansHans-Black;
+      font-size: 20px;
+      color: #f0d590;
     }
   }
 }
@@ -1028,4 +1048,427 @@
   left: 0;
   bottom: 0; //这里换成top:0;就悬浮在头部
   z-index: 100;
+}
+
+// -----------------支付弹窗----
+.container1 {
+  width: 692px;
+  height: 640px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.content {
+  width: 660px;
+  height: 640px;
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.close_btn {
+  width: 16px;
+  height: 16px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+.content_head_img {
+  width: 660px;
+  height: 68px;
+}
+// 支付内容
+.pay_contents {
+  width: 620px;
+  height: 130.3px;
+  // margin: 0px 20px 20px 20px;
+  display: flex;
+  flex-direction: row;
+  .pay_content {
+    width: 179px;
+    height: 112.3px;
+    display: flex;
+    flex-direction: column;
+    .pay_content_tag {
+      width: 60px;
+      height: 22px;
+      background: #fc491d;
+      border-radius: 10px 15px 15px 0px;
+      align-self: flex-end;
+      position: relative;
+      top: 10.3px;
+      text-align: center;
+      line-height: 22px;
+    }
+    .pay_content_detail {
+      width: 150px;
+      height: 90px;
+      display: flex;
+      background: #ffffff;
+      // border: 2px solid #eeb86e;
+      // border-radius: 6px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image: url("./img/icon.svg");
+      .pay_content_detail_title {
+        width: 71px;
+        height: 14px;
+        font-family: NotoSansHans-Regular;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.6);
+      }
+      .pay_content_detail_price {
+        width: 74px;
+        height: 40px;
+        margin-top: 8px;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        .pay_content_detail_price_icon {
+          width: 10px;
+          height: 40px;
+          font-family: PingFangSC-Semibold;
+          font-size: 16px;
+          color: #88632f;
+        }
+        .pay_content_detail_price_num {
+          width: 62px;
+          height: 40px;
+          font-family: PingFangSC-Semibold;
+          font-size: 28px;
+          color: #88632f;
+          margin-left: 2px;
+        }
+      }
+    }
+  }
+}
+// 支付方式
+.pay_way {
+  width: 620px;
+  //   height: 270px;
+  padding: 0px 0px 0px 0px;
+  background: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  .pay_way_btns {
+    width: 620px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    .pay_way_btn {
+      width: 160px;
+      height: 48px;
+      padding: 13px 42px 13px 42px;
+      background: #f3f4f9;
+      border: 1px solid #e6e6e6;
+      font-family: PingFangSC-Regular;
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.6);
+      cursor: pointer;
+    }
+    .pay_way_btn_chosed {
+      width: 160px;
+      height: 48px;
+      padding: 13px 42px 13px 42px;
+      background: #ffffff;
+      border-bottom: none;
+    }
+  }
+  // 快捷支付
+  .quick_pay_detail {
+    width: 620px;
+    height: 222px;
+
+    border: 1px solid #e6e6e6;
+    border-top: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .quick_pay_detail_QR_code {
+      width: 120px;
+      height: 121px;
+      background-color: black;
+      color: white;
+    }
+    .quick_pay_detail_info {
+      width: 132px;
+      height: 100px;
+      margin-left: 36px;
+      .quick_pay_detail_info_price {
+        width: 116x;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        .quick_pay_detail_info_price_icon {
+          width: 10px;
+          height: 40px;
+          font-family: PingFangSC-Semibold;
+          font-size: 16px;
+          color: #de3033;
+        }
+        .quick_pay_detail_info_price_num {
+          width: 104px;
+          height: 40px;
+          margin-left: 2px;
+          font-family: PingFangSC-Semibold;
+          font-size: 28px;
+          color: #de3033;
+        }
+      }
+      .quick_pay_detail_info_des {
+        width: 135px;
+        height: 14px;
+        font-family: NotoSansHans-Regular;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.4);
+        text-align: center;
+      }
+      .quick_pay_detail_info_imgs {
+        width: 64px;
+        height: 24px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 14px;
+        .quick_pay_detail_info_img {
+          width: 24px;
+          height: 24px;
+          background-image: url("img/icon.svg");
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  // 余额支付
+  .balance_pay_detail {
+    width: 620px;
+    height: 222px;
+    border: 1px solid #e6e6e6;
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    .balance_pay_detail_info {
+      width: 395px;
+      height: 40px;
+      margin-top: 47px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: baseline;
+      .balance_pay_detail_info_txt {
+        width: 80px;
+        height: 22px;
+        font-family: PingFangSC-Regular;
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.6);
+        line-height: 22px;
+      }
+
+      .balance_pay_detail_info_price_icon {
+        width: 10px;
+        height: 40px;
+        font-family: PingFangSC-Semibold;
+        font-size: 16px;
+        color: #de3033;
+      }
+      .balance_pay_detail_info_price_num {
+        width: 104px;
+        height: 40px;
+        margin-left: 2px;
+        font-family: PingFangSC-Semibold;
+        font-size: 28px;
+        color: #de3033;
+      }
+    }
+    .balance_pay_btn {
+      width: 120px;
+      height: 40px;
+      margin-top: 50px;
+      background: #eeb86e;
+      border-radius: 4px;
+      font-family: PingFangSC-Medium;
+      font-size: 18px;
+      color: #ffffff;
+      letter-spacing: 0;
+      line-height: 40px;
+      padding-left: 24px;
+      cursor: pointer;
+    }
+  }
+  // 对公转账
+  .company_pay_detail {
+    width: 620px;
+    height: 222px;
+
+    border: 1px solid #e6e6e6;
+    border-top: none;
+    padding-left: 20px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .company_pay_detail_info1 {
+      width: 620px;
+      height: 14px;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      font-family: NotoSansHans-Regular;
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.8);
+      .company_pay_detail_info1_1 {
+        width: 70px;
+        height: 14px;
+      }
+      .company_pay_detail_info1_2 {
+        width: 224px;
+        height: 14px;
+        margin-left: 60px;
+      }
+    }
+    .company_pay_detail_info2 {
+      width: 149px;
+      height: 24px;
+
+      margin-top: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: baseline;
+      .company_pay_detail_info2_1 {
+        width: 42px;
+        height: 24px;
+        font-family: NotoSansHans-Regular;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.8);
+        line-height: 21px;
+      }
+      .company_pay_detail_info2_2 {
+        width: 93px;
+        height: 24px;
+
+        font-family: NotoSansHans-Bold;
+        font-size: 24px;
+        color: #de3033;
+        line-height: 21px;
+      }
+      .company_pay_detail_info2_3 {
+        width: 14px;
+        height: 24px;
+        font-family: NotoSansHans-Regular;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.8);
+        line-height: 21px;
+      }
+    }
+
+    .company_pay_detail_info3 {
+      width: 370px;
+      height: 32px;
+      margin-top: 23px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+
+      align-items: baseline;
+      .company_pay_detail_info_btn {
+        width: 148px;
+        height: 32px;
+        padding-left: 18px;
+        background: #eeb86e;
+        border-radius: 4px;
+        line-height: 32px;
+        font-family: NotoSansHans-Medium;
+        font-size: 14px;
+        color: #ffffff;
+        letter-spacing: 0;
+        cursor: pointer;
+      }
+      .company_pay_detail_info_btn_des {
+        width: 210px;
+        height: 12px;
+        font-family: NotoSansHans-Regular;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.4);
+        margin-left: 12px;
+      }
+    }
+    .company_pay_detail_info4 {
+      width: 570px;
+      height: 14px;
+      margin-top: 20px;
+      font-family: NotoSansHans-Regular;
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.4);
+      line-height: 12px;
+    }
+  }
+}
+// 支付弹窗底部按钮
+.pay_power {
+  width: 620px;
+  height: 110px;
+
+  .pay_power_title {
+    width: 80px;
+    height: 22px;
+    margin-top: 20px;
+    font-family: PingFangSC-Semibold;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .pay_power_area {
+    width: 620px;
+    height: 68px;
+    display: flex;
+    padding-top: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .pay_power_item {
+      width: 75px;
+      height: 58px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .pay_power_item_img {
+        width: 32px;
+        height: 32px;
+        // opacity: 0.24;
+        // background: #eeb86e;
+        background-image: url("./img/icon.svg");
+        border-radius: 50px;
+      }
+      .pay_power_item_txt {
+        width: 75px;
+        height: 20x;
+        margin-top: 6px;
+      }
+    }
+  }
+}
+.vip_agreement {
+  width: 60px;
+  height: 20px;
+  margin: 20px 0px 23px 0px;
+  opacity: 0.6;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #000000;
+  text-decoration: underline;
+  cursor: pointer;
 }
