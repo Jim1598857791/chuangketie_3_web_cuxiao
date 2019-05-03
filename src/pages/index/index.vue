@@ -198,8 +198,9 @@
     <div class="middle">
       <img class="middle_title_img" src="./img/vip_quanyi.png" alt>
       <!-- 会员模板全部免费 -->
+
       <div class="middle_1" style="height: 552px; padding-bottom:30px;">
-        <div class="middle_1_left"  >
+        <div class="middle_1_left">
           <div class="middle_1_left_title">
             <div class="middle_1_left_title_1">会员模板全部</div>
             <div class="middle_1_left_title_2">免费</div>
@@ -207,9 +208,8 @@
           <div class="middle_1_left_des">满足所有营销、新媒体场景需求</div>
           <div class="middle_1_left_btn" @click="pay_fun('vip_666')">开通立享</div>
         </div>
-
         <video
-          class="middle_1_right" 
+          class="middle_1_right_video"
           :src="videoSrc[0]"
           :poster="videoImg"
           :muted="muteStatus"
@@ -220,8 +220,7 @@
 
       <!-- 300款专属商用字体 -->
       <div class="middle_2">
-        <div class="middle_2_left_font">
-          <img src="./img/font_backgroung.png" alt="背景" class="middle_2_left_font_background">
+        <div class="middle_2_left_font_bgimg">
           <video
             class="middle_2_left_font_video"
             :src="videoSrc[1]"
@@ -252,20 +251,18 @@
         </div>
 
         <video
-          class="middle_1_right"
+          class="middle_1_right_video"
           :src="videoSrc[2]"
           :poster="videoImg"
           :muted="muteStatus"
           :autoplay="playStatus"
           :loop="loopPlay"
-         
         >your browser does not support the video tag</video>
       </div>
-      <div class="middle_2"  >
+      <div class="middle_2">
         <img
-          class="middle_2_left_2"
-          style=" width: 645.8px;   height: 350px;
-             position: relative; left: -170px;"
+          class="middle_2_left_img"
+          style=" position: relative; left: -170px;"
           src="./img/copyright_protect.png"
           alt="版权保障"
         >
@@ -278,7 +275,7 @@
           <div class="middle_2_right_btn" @click="pay_fun('vip_666')">开通立享</div>
         </div>
       </div>
-      <div class="middle_1"  >
+      <div class="middle_1">
         <div class="middle_1_left" style="width:266px;">
           <div class="middle_1_left_title" style="width:266px;">
             <div class="middle_1_left_title_1" style="width:266px;">签订商业授权书</div>
@@ -287,22 +284,16 @@
           <div class="middle_1_left_btn" @click="pay_fun('vip_666')">开通立享</div>
         </div>
 
-        <img
-          class="middle_1_right"
-          style=" width: 580px; height: 322px;"
-          src="./img/business_enpower.png"
-          alt="商业授权"
-        >
+        <img class="middle_1_right_img" src="./img/business_enpower.png" alt="商业授权">
       </div>
-      <div class="middle_2" >
-        <div class="middle_2_left_2">
-          <img
-            class="middle_1_right"
-            style=" width: 684px; height: 330px;"
-            src="./img/company_manage.png"
-            alt="企业管理"
-          >
-        </div>
+      <div class="middle_2">
+        <img
+          class="middle_2_left_img"
+          style=" width: 684px; height: 330px;"
+          src="./img/company_manage.png"
+          alt="企业管理"
+        >
+
         <div class="middle_2_right" style="width:256px; ">
           <div class="middle_2_right_title" style="width:256px;">
             <div class="middle_2_right_title_1" style="width:152px;">企业管理</div>
@@ -311,8 +302,7 @@
           <div class="middle_2_right_btn" @click="pay_fun('vip_666')">开通立享</div>
         </div>
       </div>
-
-      <div class="middle_1" >
+      <div class="middle_1">
         <div class="middle_1_left" style="width:328px;">
           <div class="middle_1_left_title" style="width:328px;">
             <div class="middle_1_left_title_1" style="width:76px;">印刷</div>
@@ -323,8 +313,7 @@
         </div>
 
         <video
-          class="middle_1_right"
-        
+          class="middle_1_right_video"
           :src="videoSrc[3]"
           :poster="videoImg"
           :muted="muteStatus"
@@ -332,10 +321,9 @@
           :loop="loopPlay"
         >your browser does not support the video tag</video>
       </div>
-      <div class="middle_2"  >
+      <div class="middle_2">
         <video
-          style="width:640px; height:304px;"
-          class="middle_2_left_2"
+          class="middle_2_left_video"
           :src="videoSrc[4]"
           :poster="videoImg"
           :muted="muteStatus"
