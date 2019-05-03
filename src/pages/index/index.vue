@@ -220,7 +220,8 @@
 
       <!-- 300款专属商用字体 -->
       <div class="middle_2">
-        <div class="middle_2_left_font_bgimg">
+        <div class="middle_2_left_font">
+          <img class="middle_2_left_font_img" src="./img/font_backgroung.png" alt="专属商用字体">
           <video
             class="middle_2_left_font_video"
             :src="videoSrc[1]"
@@ -246,7 +247,7 @@
             <div class="middle_1_left_title_2" style="width: 84px;text-align: right;">40万</div>
             <div class="middle_1_left_title_1" style="width: 266px;">专属可商用图片</div>
           </div>
-          <div class="middle_1_left_des">满足所有营销、新媒体场景需求</div>
+          <div class="middle_1_left_des">超高清，有版权，敢商用</div>
           <div class="middle_1_left_btn" @click="pay_fun('vip_666')">开通立享</div>
         </div>
 
