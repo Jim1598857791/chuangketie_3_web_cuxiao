@@ -198,8 +198,8 @@
     <div class="middle">
       <img class="middle_title_img" src="./img/vip_quanyi.png" alt>
       <!-- 会员模板全部免费 -->
-      <div class="middle_1" style="height: 552px;">
-        <div class="middle_1_left">
+      <div class="middle_1" style="height: 552px; padding-bottom:30px;">
+        <div class="middle_1_left"  >
           <div class="middle_1_left_title">
             <div class="middle_1_left_title_1">会员模板全部</div>
             <div class="middle_1_left_title_2">免费</div>
@@ -209,7 +209,7 @@
         </div>
 
         <video
-          class="middle_1_right"
+          class="middle_1_right" 
           :src="videoSrc[0]"
           :poster="videoImg"
           :muted="muteStatus"
@@ -232,7 +232,7 @@
           >your browser does not support the video tag</video>
         </div>
 
-        <div class="middle_2_right" style=" width: 339px;margin-left: 181px;">
+        <div class="middle_2_right" style=" width: 339px; ">
           <div class="middle_2_right_title" style=" width: 339px;">
             <div class="middle_2_right_title_2" style=" width: 107px; margin-left: 0px;">300款</div>
             <div class="middle_2_right_title_1" style=" width: 228px;margin-left:4px;">专属商用字体</div>
@@ -241,7 +241,7 @@
           <div class="middle_2_right_btn" @click="pay_fun('vip_666')">开通立享</div>
         </div>
       </div>
-      <div class="middle_1" style=" padding-top: 100px;">
+      <div class="middle_1">
         <div class="middle_1_left" style=" width: 350px;">
           <div class="middle_1_left_title" style=" width: 350px;">
             <div class="middle_1_left_title_2" style="width: 84px;text-align: right;">40万</div>
@@ -258,10 +258,10 @@
           :muted="muteStatus"
           :autoplay="playStatus"
           :loop="loopPlay"
-          style="  margin-left: 200px;  "
+         
         >your browser does not support the video tag</video>
       </div>
-      <div class="middle_2" style="padding-top: 116px;">
+      <div class="middle_2"  >
         <img
           class="middle_2_left_2"
           style=" width: 645.8px;   height: 350px;
@@ -270,16 +270,16 @@
           alt="版权保障"
         >
 
-        <div class="middle_2_right" style="width:360px; margin-top:64px;">
-          <div class="middle_2_right_title" style=" justify-content: flex-end; ">
+        <div class="middle_2_right" style="width:360px;">
+          <div class="middle_2_right_title">
             <div class="middle_2_right_title_1" style="width:152px;">版权保障</div>
           </div>
           <div class="middle_2_right_des" style="width:360px;">带有企业版权标识的作品均在国家版权局登记</div>
           <div class="middle_2_right_btn" @click="pay_fun('vip_666')">开通立享</div>
         </div>
       </div>
-      <div class="middle_1" style=" padding-top: 130px;">
-        <div class="middle_1_left" style="width:266px; margin-top:50px;">
+      <div class="middle_1"  >
+        <div class="middle_1_left" style="width:266px;">
           <div class="middle_1_left_title" style="width:266px;">
             <div class="middle_1_left_title_1" style="width:266px;">签订商业授权书</div>
           </div>
@@ -289,12 +289,12 @@
 
         <img
           class="middle_1_right"
-          style=" width: 580px; height: 322px; margin-left:354px;"
+          style=" width: 580px; height: 322px;"
           src="./img/business_enpower.png"
           alt="商业授权"
         >
       </div>
-      <div class="middle_2" style=" padding-top: 126px;">
+      <div class="middle_2" >
         <div class="middle_2_left_2">
           <img
             class="middle_1_right"
@@ -303,8 +303,8 @@
             alt="企业管理"
           >
         </div>
-        <div class="middle_2_right" style="width:256px; margin-left:260px; margin-top:54px;">
-          <div class="middle_2_right_title" style="width:256px;   justify-content: flex-end; ">
+        <div class="middle_2_right" style="width:256px; ">
+          <div class="middle_2_right_title" style="width:256px;">
             <div class="middle_2_right_title_1" style="width:152px;">企业管理</div>
           </div>
           <div class="middle_2_right_des" style="width:256px;">管理设计和成员，成本直降50%</div>
@@ -312,7 +312,7 @@
         </div>
       </div>
 
-      <div class="middle_1" style=" padding-top: 100px;">
+      <div class="middle_1" >
         <div class="middle_1_left" style="width:328px;">
           <div class="middle_1_left_title" style="width:328px;">
             <div class="middle_1_left_title_1" style="width:76px;">印刷</div>
@@ -324,7 +324,7 @@
 
         <video
           class="middle_1_right"
-          style="margin-left:222px;"
+        
           :src="videoSrc[3]"
           :poster="videoImg"
           :muted="muteStatus"
@@ -332,7 +332,7 @@
           :loop="loopPlay"
         >your browser does not support the video tag</video>
       </div>
-      <div class="middle_2" style=" padding-top: 120px;">
+      <div class="middle_2"  >
         <video
           style="width:640px; height:304px;"
           class="middle_2_left_2"
@@ -342,7 +342,7 @@
           :autoplay="playStatus"
           :loop="loopPlay"
         >your browser does not support the video tag</video>
-        <div class="middle_2_right" style="width:288px; margin-top:60px;">
+        <div class="middle_2_right" style="width:288px; ">
           <div class="middle_2_right_title" style="width:233px;">
             <div class="middle_2_right_title_1" style="width:155px;">上传空间</div>
             <div class="middle_2_right_title_2" style="width:72px;margin-left:8px;">16G</div>

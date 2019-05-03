@@ -730,24 +730,24 @@
 }
 
 .middle_1 {
-  // width: 1200px;
   width: 1920px;
   height: 582px;
-  padding: 70px 360px 0px 360px;
+  padding: 0px 360px 0px 360px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   .middle_1_left {
     width: 304px;
-    height: 226px;
-    margin-top: 80px;
+    height: 230px;
+    // 为了让标题按钮按照ui稿子中一样上边距180下176
+    padding-top: 4px;
     display: flex;
     flex-direction: column;
-
     justify-content: flex-start;
+    align-self: center;
     .middle_1_left_title {
       width: 304px;
-      // width: 380px;
       height: 53px;
 
       display: flex;
@@ -807,7 +807,7 @@
   .middle_1_right {
     width: 650px;
     height: 382px;
-    margin-left: 246px;
+ 
     background: #f3f5f7;
     box-shadow: 2px 8px 24px 0 rgba(0, 79, 255, 0.16);
     border-radius: 10px;
@@ -816,22 +816,24 @@
 .middle_2 {
   width: 1920px;
   height: 582px;
-  padding: 85px 360px 0px 360px;
+  padding: 0px 360px 0px 360px;
   // opacity: 0.8;
   background-color: #f6f7fb;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   background-image: url("img/middle_background.png");
 
   .middle_2_left_font {
     width: 680px;
     height: 382px;
+    margin-bottom: 30px;
     .middle_2_left_font_background {
       width: 680px;
       height: 382px;
-
       border-radius: 10px;
+   
     }
     .middle_2_left_font_video {
       width: 620px;
@@ -856,19 +858,19 @@
   }
   .middle_2_right {
     width: 339px;
-    height: 226px;
-    margin-top: 95px;
-    margin-left: 241px;
+    height: 230px;
+    padding-top: 4px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-end;
+
     .middle_2_right_title {
       width: 360px;
       height: 53px;
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: flex-end;
       .middle_2_right_title_1 {
         width: 107px;
         height: 53px;
@@ -885,7 +887,7 @@
         font-family: PingFangSC-Semibold;
         font-size: 38px;
         color: #2b2c31;
-
+        // 彩色字体
         background: linear-gradient(to top, #88632f, #eeb86e 100%);
         background-clip: content-box;
         -webkit-background-clip: text;
@@ -913,7 +915,7 @@
       line-height: 48px;
       cursor: pointer;
     }
-    .middle_2_right_btn:hover{
+    .middle_2_right_btn:hover {
       background: #2e3244;
       box-shadow: 2px 6px 24px 0 rgba(46, 50, 68, 0.3);
       border-radius: 30px;
